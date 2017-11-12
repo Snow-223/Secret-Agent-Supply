@@ -96,15 +96,13 @@ body{
 }
 
 .products img{
-  height: 9rem;
-  position:relative;
+  max-width: 8rem;
 }
 
 .img{
-  display: flex;
-  padding: 2rem;
-  justify-content: center;
+  padding: 2rem ;
   border-bottom: 4px solid black;
+  text-align: center;
 }
 
 .pen{
@@ -122,7 +120,52 @@ body{
   width: 30%;
 }
 
-.glasses img{
-  max-width: 100%;
-  max-height: 100%;
+.glasses .img{
+  padding: 4.1rem 2rem;
+}
+
+.l-container{
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  font-family: Helvetica;
+}
+
+.Location{
+  width: 35%;
+}
+
+.Hours{
+  width: 35%;
+}
+
+.Location .title{
+  background-color: black;
+  color: white;
+  padding-left: 2rem;
+  padding: 1rem;
+}
+
+.Hours .title{
+  background-color: black;
+  color: white;
+  padding-left: 2rem;
+  padding: 1rem;
+}
+
+.footer{
+  background-color: black;
+  font-family: Helvetica;
+  color:white;
+  margin-top: 4rem;
+  height: 5rem;
+}
+
+.footer .con{
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 2rem;
 }
