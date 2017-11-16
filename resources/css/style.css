@@ -33,7 +33,6 @@ body{
   background-image:
   url(moto.jpeg);
   background-repeat: no-repeat;
-  background-position: 0 -10rem ;
   background-size: cover;
   height: 25rem;
 }
@@ -64,17 +63,24 @@ body{
 
 .banner{
   background-color: firebrick;
+  color: white;
+  font-family: Helvetica;
 }
 
-.banner .container{
+.banner .container1{
   max-width: 960px;
-  color: white;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  font-family: Helvetica;
   font-size: 18px;
   padding-top:0.75rem;
   padding-bottom: 0.75rem;
+}
+
+@media only screen and (min-width: 1024px){
+  .banner .container2{
+    display: none;
+  }
 }
 
 .products{
@@ -121,7 +127,7 @@ body{
 }
 
 .glasses .img{
-  padding: 4.1rem 2rem;
+  padding: 4.12rem 2rem;
 }
 
 .l-container{
@@ -160,12 +166,102 @@ body{
   font-family: Helvetica;
   color:white;
   margin-top: 4rem;
-  height: 5rem;
+  height: 10rem;
 }
 
 .footer .con{
   max-width: 960px;
   margin: 0 auto;
   text-align: left;
-  padding-top: 2rem;
+  padding-top: 4rem;
+}
+
+
+@media only screen and (max-width: 1024px){
+  .banner .container1{
+    display:none;
+  }
+
+  .banner .container2{
+    text-align: center;
+    font-size: 18px;
+    padding-top:0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .pen{
+    width:47%
+  }
+
+  .watch{
+    width: 47%;
+  }
+
+  .glasses{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .header{
+    height: 15rem;
+  }
+
+  .header .content{
+    padding-top: 10rem;
+  }
+
+  .header .block{
+    padding:1rem 2rem;
+  }
+
+  .block h2{
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  .block h1{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .watch{
+    display: none;
+  }
+
+  .glasses{
+    display: none;
+  }
+
+  .pen{
+    width: 90%;
+  }
+
+  .pen img{
+    width:90%;
+  }
+
+  .products{
+    justify-content: center;
+  }
+
+  .l-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Location{
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  .Hours{
+    width: 90%;
+  }
+
+  .footer .con{
+    text-align: center;
+  }
 }
